@@ -1,0 +1,16 @@
+﻿@model IEnumerable<EntityFramworkDemo.Models.Student>
+
+@{ 
+    int i = 1;
+} 
+@foreach (var student in Model)
+{
+    <h1>@i</h1>
+    <h1>@student.Name</h1>
+    <h1>@student.Sex</h1>
+    <h1>@student.Major</h1>
+    <h1>@student.Age</h1>
+    <p>----------------</p>
+    i++;
+}
+
