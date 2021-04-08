@@ -64,7 +64,7 @@ namespace EntityFramworkDemo
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Students}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }

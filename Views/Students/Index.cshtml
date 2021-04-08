@@ -3,7 +3,7 @@
 @{ 
     int i = 1;
 } 
-
+<a asp-action="Create" class="btn btn-primary">Create</a>
 <table class="table">
   <thead>
     <tr>
@@ -12,6 +12,8 @@
       <th scope="col">Age</th>
       <th scope="col">Sex</th>
       <th scope="col">Major</th>
+      <th scope="col">Action</th>
+      <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
@@ -25,6 +27,9 @@
         @{
           i++;
         }
+        @*<td><a asp-action="Update" asp-route-id="@student.Id">Update</a></td>*@
+        <td><a href="/students/update/@student.Id">Update</a></td>
+        <td><a asp-action="Delete" asp-route-id="@student.Id">Delete</a></td>
       </tr>
     }
   </tbody>

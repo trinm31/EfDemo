@@ -35,5 +35,27 @@ namespace EntityFramworkDemo.Controllers
             _db.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
+        [HttpGet]
+        public IActionResult Update(int id)
+        {
+            var student = _db.Students.Find(id);
+            return View(student);
+        }
+
+        [HttpPost]
+        public IActionResult Update(Student student)
+        {
+            _db.Students.Update(student);
+            _db.SaveChanges();
+            return RedirectToAction(nameof(Index));
+        }
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var student = _db.Students.Find(id);
+            _db.Students.Remove(student);
+            _db.SaveChanges();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

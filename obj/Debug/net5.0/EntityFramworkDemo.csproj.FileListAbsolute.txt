@@ -428,3 +428,4 @@ D:/Information Technology/JetBrains Rider Code/EfDemo/obj/Debug/net5.0/Razor/Vie
 /Users/minhtri/RiderProjects/EfDemo/obj/Debug/net5.0/ref/EntityFramworkDemo.dll
 /Users/minhtri/RiderProjects/EfDemo/obj/Debug/net5.0/EntityFramworkDemo.pdb
 /Users/minhtri/RiderProjects/EfDemo/obj/Debug/net5.0/EntityFramworkDemo.genruntimeconfig.cache
+/Users/minhtri/RiderProjects/EfDemo/obj/Debug/net5.0/Razor/Views/Students/Update.cshtml.g.cs
