@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/contentModel.xml
+/modules.xml
+/.idea.EntityFramworkDemo.iml
+# Datasource local storage ignored files
+/../../../../../../../:\Information Technology\JetBrains Rider Code\EfDemo\.idea\.idea.EntityFramworkDemo.dir\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

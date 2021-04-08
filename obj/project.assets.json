@@ -6494,26 +6494,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nmtri\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Users\\nhkn1\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nmtri\\Source\\Repos\\EfDemo\\EntityFramworkDemo.csproj",
+      "projectUniqueName": "D:\\Information Technology\\JetBrains Rider Code\\EfDemo\\EntityFramworkDemo.csproj",
       "projectName": "EntityFramworkDemo",
-      "projectPath": "C:\\Users\\nmtri\\Source\\Repos\\EfDemo\\EntityFramworkDemo.csproj",
-      "packagesPath": "C:\\Users\\nmtri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nmtri\\Source\\Repos\\EfDemo\\obj\\",
+      "projectPath": "D:\\Information Technology\\JetBrains Rider Code\\EfDemo\\EntityFramworkDemo.csproj",
+      "packagesPath": "C:\\Users\\nhkn1\\.nuget\\packages\\",
+      "outputPath": "D:\\Information Technology\\JetBrains Rider Code\\EfDemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\nmtri\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\nhkn1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

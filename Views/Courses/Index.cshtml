@@ -1,0 +1,11 @@
+@model IEnumerable<EntityFramworkDemo.Models.Course>
+
+@{
+    
+}
+@foreach (var course in Model)
+{
+    <h2>@course.CourseId</h2>
+    <h2>@course.Description</h2>
+    <p>--------------------</p>
+}

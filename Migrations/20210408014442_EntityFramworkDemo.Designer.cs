@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace EntityFramworkDemo.Data.Migrations
+namespace EntityFramworkDemo.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210324020525_InitDb")]
-    partial class InitDb
+    [Migration("20210408014442_EntityFramworkDemo")]
+    partial class EntityFramworkDemo
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
