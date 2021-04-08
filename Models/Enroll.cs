@@ -10,7 +10,7 @@ namespace EntityFramworkDemo.Models
         public int Id { get; set; }
         public DateTime EnrollDate { get; set; }
         [Required] 
-        public string StudentId { get; set; }
+        public int StudentId { get; set; }
         [ForeignKey("StudentId")]
         public Student Student { get; set; }
         [Required] 

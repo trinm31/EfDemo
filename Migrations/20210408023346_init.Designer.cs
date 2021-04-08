@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EntityFramworkDemo.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210408014442_EntityFramworkDemo")]
-    partial class EntityFramworkDemo
+    [Migration("20210408023346_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -50,9 +50,8 @@ namespace EntityFramworkDemo.Migrations
                     b.Property<DateTime>("EnrollDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("StudentId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -65,8 +64,10 @@ namespace EntityFramworkDemo.Migrations
 
             modelBuilder.Entity("EntityFramworkDemo.Models.Student", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
 
                     b.Property<int?>("Age")
                         .HasColumnType("int");
