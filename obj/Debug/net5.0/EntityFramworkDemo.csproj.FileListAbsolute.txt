@@ -416,7 +416,6 @@ D:/Information Technology/JetBrains Rider Code/EfDemo/obj/Debug/net5.0/Razor/Vie
 /Users/minhtri/RiderProjects/EfDemo/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs
 /Users/minhtri/RiderProjects/EfDemo/obj/Debug/net5.0/Razor/Views/Shared/_LoginPartial.cshtml.g.cs
 /Users/minhtri/RiderProjects/EfDemo/obj/Debug/net5.0/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
-/Users/minhtri/RiderProjects/EfDemo/obj/Debug/net5.0/Razor/Views/Students/Create.cshtml.g.cs
 /Users/minhtri/RiderProjects/EfDemo/obj/Debug/net5.0/Razor/Views/Students/Index.cshtml.g.cs
 /Users/minhtri/RiderProjects/EfDemo/obj/Debug/net5.0/Razor/Views/_ViewImports.cshtml.g.cs
 /Users/minhtri/RiderProjects/EfDemo/obj/Debug/net5.0/Razor/Views/_ViewStart.cshtml.g.cs
@@ -428,4 +427,5 @@ D:/Information Technology/JetBrains Rider Code/EfDemo/obj/Debug/net5.0/Razor/Vie
 /Users/minhtri/RiderProjects/EfDemo/obj/Debug/net5.0/ref/EntityFramworkDemo.dll
 /Users/minhtri/RiderProjects/EfDemo/obj/Debug/net5.0/EntityFramworkDemo.pdb
 /Users/minhtri/RiderProjects/EfDemo/obj/Debug/net5.0/EntityFramworkDemo.genruntimeconfig.cache
-/Users/minhtri/RiderProjects/EfDemo/obj/Debug/net5.0/Razor/Views/Students/Update.cshtml.g.cs
+/Users/minhtri/RiderProjects/EfDemo/obj/Debug/net5.0/Razor/Views/Courses/Create.cshtml.g.cs
+/Users/minhtri/RiderProjects/EfDemo/obj/Debug/net5.0/Razor/Views/Students/Upsert.cshtml.g.cs
