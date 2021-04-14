@@ -22,30 +22,29 @@ namespace EntityFramworkDemo.Controllers
         }
 
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult Upsert(int? id)
         {
             var student = new Student();
+            if (id == null)
+            {
+                return View(student);
+            }
+            student = _db.Students.Find(id);
             return View(student);
         }
 
         [HttpPost]
-        public IActionResult Create(Student student)
+        public IActionResult Upsert(Student student)
         {
-            _db.Students.Add(student);
-            _db.SaveChanges();
-            return RedirectToAction(nameof(Index));
-        }
-        [HttpGet]
-        public IActionResult Update(int id)
-        {
-            var student = _db.Students.Find(id);
-            return View(student);
-        }
+            if (student.Id == null)
+            {
+                _db.Students.Add(student);
+            }
 
-        [HttpPost]
-        public IActionResult Update(Student student)
-        {
-            _db.Students.Update(student);
+            if (student.Id != null)
+            {
+                _db.Students.Update(student);
+            }
             _db.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
