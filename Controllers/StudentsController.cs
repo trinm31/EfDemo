@@ -5,9 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using EntityFramworkDemo.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EntityFramworkDemo.Controllers
 {
+    [Authorize(Roles = "Admin,Staff")]
     public class StudentsController : Controller
     {
         private readonly ApplicationDbContext _db;
@@ -22,6 +24,7 @@ namespace EntityFramworkDemo.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public IActionResult Upsert(int? id)
         {
             var student = new Student();
@@ -32,23 +35,28 @@ namespace EntityFramworkDemo.Controllers
             student = _db.Students.Find(id);
             return View(student);
         }
-
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public IActionResult Upsert(Student student)
         {
-            if (student.Id == null)
+            if (ModelState.IsValid)
             {
-                _db.Students.Add(student);
-            }
+                if (student.Id == null)
+                {
+                    _db.Students.Add(student);
+                }
 
-            if (student.Id != null)
-            {
-                _db.Students.Update(student);
+                if (student.Id != null)
+                {
+                    _db.Students.Update(student);
+                }
+                _db.SaveChanges();
+                return RedirectToAction(nameof(Index));
             }
-            _db.SaveChanges();
-            return RedirectToAction(nameof(Index));
+            return View(student);
         }
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public IActionResult Delete(int id)
         {
             var student = _db.Students.Find(id);

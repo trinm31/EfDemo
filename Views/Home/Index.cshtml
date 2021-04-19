@@ -1,8 +1,54 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@model EntityFramworkDemo.Models.ViewModels.StudentCourseViewmodel
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+@{ 
+    int i = 1;
+} 
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Sex</th>
+        <th scope="col">Major</th>
+        <th scope="col">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var student in Model.StudentList)
+    { <tr>
+          <th scope="row">@i</th>
+          <td>@student.Name</td>
+          <td>@student.Age</td>
+          <td>@student.Sex</td>
+          <td>@student.Major</td>
+          @{
+              i++;
+          }
+      </tr>
+    }
+    </tbody>
+</table>
+@{ 
+    int y = 1;
+}
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var student in Model.CourseList)
+    { <tr>
+          <th scope="row">@y</th>
+          <td>@student.Description</td>
+          @{
+              y++;
+          }
+      </tr>
+    }
+    </tbody>
+</table>

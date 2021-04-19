@@ -28,8 +28,11 @@
           i++;
         }
         @*<td><a asp-action="Update" asp-route-id="@student.Id">Update</a></td>*@
-        <td><a href="/students/Upsert/@student.Id">Update</a></td>
-        <td><a asp-action="Delete" asp-route-id="@student.Id">Delete</a></td>
+        @if (User.IsInRole("Admin"))
+        {
+          <td><a href="/students/Upsert/@student.Id">Update</a></td>
+          <td><a asp-action="Delete" asp-route-id="@student.Id">Delete</a></td>
+        }
       </tr>
     }
   </tbody>

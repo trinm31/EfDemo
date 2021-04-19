@@ -6,8 +6,9 @@ namespace EntityFramworkDemo.Models
     {
         [Key] 
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Nguyen ngu dien vo cho ta")]
         public string Name { get; set; }
+        [Range(1,100)]
         public int? Age { get; set; }
         [Required]
         public string Sex { get; set; }
